@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menubar{
+            background-color: khaki;
+            width:100%;
+
+
+        }
+        li {
+            display: inline-block;
+            padding:15px;
+            color:black;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        li a:hover{
+            color: red;
+            background-color: white;
+            
+        }
+        ul{
+            border:15px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <div class="menubar">
+        <ul>
+            <li><a href="HospitalManagement.html">Home</a></li>
+            <li><a href="DoctorOPDScheduleDetails.html">Doctor OPD Details</a></li>
+            <li><a href="PatientRegistration.html">Patient registration</a></li>
+            <li><a href="PatientLogin.html">Patient Login</a></li>
+            <li><a href="Facilities.html">Facilities</a><br></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1>Book Appoinment</h1>
+        <form name="Bookappoinment" method="get" action="DoctorOPDScheduleDetails.html">
+        <table>
+            <tr>
+        <th><label>Select Doctor: </label></th>
+        <td><select id="State" name="state" size="2">
+            <option value="Dr. Tandale">Dr. Tandale</option>
+            <option value="Dr. Chandrashekhar">Dr. Chandrashekhar</option>
+            <option value="Dr. Kulkarni">Dr. Kulkarni</option>
+            <option value="Dr. Shinde">Dr. Shinde</option>
+            <option value="Dr. Pandharpote">Dr. Pandharpote</option>
+            <option value="Dr. Firodiya">Dr. Firodiya</option>
+            </select></td>
+        </tr>
+        <tr>
+        <th><label>Select Date: </label></th>
+        <td><input type="date" name="date"></td>
+    </tr>
+        <tr>
+        <td><input type="submit" value="Submit"></td>
+        <td><input type="reset" value="Refresh"></td>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>

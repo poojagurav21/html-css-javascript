@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menubar{
+            background-color: khaki;
+            width:100%;
+
+
+        }
+        li {
+            display: inline-block;
+            padding:15px;
+            color:black;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        li a:hover{
+            color: red;
+            background-color: white;
+            
+        }
+        ul{
+            border:15px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body bgcolor="pink" >
+    <div class="menubar">
+        <ul>
+            <li><a href="HospitalManagement.html">Home</a></li>
+            <li><a href="DoctorOPDScheduleDetails.html">Doctor OPD Details</a></li>
+            <li><a href="PatientRegistration.html">Patient registration</a></li>
+            <li><a href="PatientLogin.html">Patient Login</a></li>
+            <li><a href="Facilities.html">Facilities</a><br></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1>Patient Registration Form</h1>
+    <form name="PatientRegistration" method="get" action="PatientRegistration.html">
+        <table>
+            <tr>
+                <th><label>First Name: </label></th>
+                <td><input type="text" name="fn" placeholder="Enter your first name"></td>
+        </tr>
+        <tr>
+        <th><label>Last Name: </label></th>
+        <td><input type="text" name="ln" placeholder="Enter your last name"></td>
+    </tr>
+    <tr>
+        <th><label>User Id: </label></th>
+        <td><input type="text" name="uid" placeholder="Enter user id"></td>
+    </tr>
+    <tr>
+        <th><label>Password: </label></th>
+        <td><input type="password" name="pass" minlength="0" maxlength="10" placeholder="Enter password"></td>
+    </tr>
+    <tr>
+        <th><label>Address: </label></th>
+        <td><textarea name="address" rows="6" cols="20"></textarea></td>
+    </tr>
+    <tr>
+        <th><label>City: </label>  </th>     
+        <td><select id="city" name="city" size="2">
+        <option value="Ahmednagar">Ahmednagar</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Jalgaon">Jalgaon</option>
+        <option value="Aurangabad">Aurangabad</option>
+        <option value="Solapur">Solapur</option>
+        </select></td>
+    </tr>
+    <tr>
+        <th><label>State: </label></th>
+        <td><select id="State" name="state" size="2">
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajstan">Rajstan</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Keral">Keral</option>
+            </select></td>
+        </tr>
+        <tr>
+        <th><label>Gender: </label></th>
+        <td>Male<input type="radio" id="mgen" name="gen">
+        Female<input type="radio" id="fgen" name="gen"></td>
+    </tr>
+    <tr>
+        <th><label>Date Of Birth: </label></th>
+        <td><input type="date" name="dob"></td>
+    </tr>
+    <tr>
+        <th><label>Email: </label></th>
+        <td><input type="email" id="email" name="email"></td>
+    </tr>
+    <tr>
+        <th><label>Precription: </label></th>
+        <td><input type="file" name="Precription"></td>
+    </tr>
+
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="Refresh"></td>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>

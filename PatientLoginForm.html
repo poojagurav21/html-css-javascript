@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.menubar{
+        background-color: khaki;
+        width:100%;
+
+
+    }
+    li {
+        display: inline-block;
+        padding:15px;
+        color:black;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    li a:hover{
+        color: red;
+        background-color: white;
+        
+    }
+    ul{
+        border:15px;
+        list-style-type: none;
+    }</style>
+</head>
+<body bgcolor="pink">
+    <div class="menubar">
+        <ul>
+            <li><a href="HospitalManagement.html">Home</a></li>
+            <li><a href="DoctorOPDScheduleDetails.html">Doctor OPD Details</a></li>
+            <li><a href="PatientRegistration.html">Patient registration</a></li>
+            <li><a href="PatientLogin.html">Patient Login</a></li>
+            <li><a href="Facilities.html">Facilities</a><br></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1>Patient Login Form</h1>
+    <form name="PatientLogin" method="get" action="PatientLogin.html">
+        <table>
+        <tr>
+            <th><label>User Id: </label></th>
+        <td><input type="text" name="uid" placeholder="Enter user id"></td>
+        </tr>
+        <tr>
+        <th><label>Password: </label></th>
+        <td><input type="password" name="pass" minlength="0" maxlength="10" placeholder="Enter password"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        <td><input type="reset" value="Refresh"></td>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>

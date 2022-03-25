@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color:rgb(105, 236, 236);
+            border: 5px;
+            margin: 10px;
+            padding: 5px;
+            font:100;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-decoration:double;
+            border-collapse:separate;
+            border-radius: 5%;
+            border-style:double;
+            border-spacing: 5px;
+            border-color: black;
+            
+        }
+        td{
+            border-radius: 10%;
+            border-collapse: separate;
+            border-style:solid;
+            border-color: black;
+            background-color:lightcyan;
+
+
+        }
+        th,tr{
+            border: 2px;
+            margin: 50px;
+            padding: 5px;
+            font:100;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-decoration:double;
+            border-collapse: separate;
+            border-radius: 10%;
+            border-style:solid;
+            border-color: black;
+            background-color:lightblue;
+        }
+        .menubar{
+            background-color: khaki;
+            width:100%;
+
+
+        }
+        li {
+            display: inline-block;
+            padding:15px;
+            color:black;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        li a:hover{
+            color: red;
+            background-color: white;
+            
+        }
+        ul{
+            border:15px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <div class="menubar">
+        <ul>
+            <li><a href="HospitalManagement.html">Home</a></li>
+            <li><a href="DoctorOPDScheduleDetails.html">Doctor OPD Details</a></li>
+            <li><a href="PatientRegistration.html">Patient registration</a></li>
+            <li><a href="PatientLogin.html">Patient Login</a></li>
+            <li><a href="Facilities.html">Facilities</a><br></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1>Available Doctors and Their Time</h1>
+    <table border="double" cellpadding: >
+        <tr>
+            <th rowspan="3">Day</th>
+            
+            <th colspan="3">Time and Name</th>
+            
+        </tr>
+        <tr>
+            <th colspan="2">Time</th>
+            <th rowspan="2">Name</th>
+        </tr>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>8:00am</td>
+            <td >1:00pm</td>
+            <td>Dr. Tandale</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>8:00am</td>
+            <td>1:00pm</td>
+            <td>Dr. Chandrashekhar</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00am</td>
+            <td>1:00pm</td>
+            <td>Dr. Kulkarni</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>8:00am</td>
+            <td>1:00pm</td>
+            <td>Dr. Shinde</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>8:00am</td>
+            <td>1:00pm</td>
+            <td>Dr. Pandharpote</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>8:00am</td>
+            <td>1:00pm</td>
+            <td>Dr. Firodiya</td>
+        </tr>
+
+    </table>
+   
+   
+</center>
+</body>
+</html>
